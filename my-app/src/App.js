@@ -4,8 +4,8 @@ import Recipe from './Recipe';
 import './App.css';
 
 function App() {
-  const APP_ID = "85b3f682";
-  const APP_KEY = "c3416518992e5b8d201901481a6889a9";
+  const APP_ID = "YOURID(GET IT FROM edamam website under recipe API";
+  const APP_KEY = "GET IT FROM WEBSITE UNDER DASHBOARD";
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");

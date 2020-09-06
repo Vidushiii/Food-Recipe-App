@@ -1,38 +1,33 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-food-western-food-simple-poster-background-image_25130.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.search-bar{
+  width: 180px;
+  border: none;
+  height: 35px;
+  
+}
+
+.search-form{
+ min-height: 10vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.search-button{
+  background:rgb(112, 5, 41);
+  border: plum;
+  padding: 10px 20px;
+  color: aliceblue;
+}
+
+.recipes{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

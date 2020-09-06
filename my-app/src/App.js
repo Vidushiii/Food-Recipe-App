@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import logo from './logo.svg';
+import Recipe from './Recipe';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     const data = await response.json();
     console.log(data.hits);
     setRecipes(data.hits);
+    console.log(data.hits);
   }
 
   return (
@@ -24,8 +26,14 @@ function App() {
         <input className= "search-bar" type = "text"></input>
         <button className= "search-button" type = "Submit">Search</button>
       </form>
-      <h1 onClick={() => setCounter(counter+1)}>{counter}</h1>
-    </div>
+      {recipes.map(recipe => (
+        <Recipe 
+        title={recipe.recipe.lable} 
+        calories={recipe.recipe.calories}
+        image={recipe.recipe.image}
+        />
+      ))}
+       </div>
   );
 }
 
